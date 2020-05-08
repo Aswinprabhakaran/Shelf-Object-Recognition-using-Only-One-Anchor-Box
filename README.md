@@ -63,10 +63,10 @@ This folder contains scripts as follows :
 
 2. [converting annotation form COCO format to PASCAL-VOC format(yolo acceptable format)](https://github.com/Aswinprabhakaran/product_detection_aswin_prabhakaran/blob/master/utils/create_pascal_VOC_format_annotations.py) 
 
-3. [Plot Annotation on images for visual verification] (https://github.com/Aswinprabhakaran/product_detection_aswin_prabhakaran/blob/master/utils/plot_annotations_on_images.py)
+3. [Plot Annotation on images for visual verification](https://github.com/Aswinprabhakaran/product_detection_aswin_prabhakaran/blob/master/utils/plot_annotations_on_images.py)
 
 This folder also contains script to 
-[generate 8 coordinate annotations from 4 coordinate (pascal-VOC) format] (https://github.com/Aswinprabhakaran/product_detection_aswin_prabhakaran/blob/master/utils/make_8_coordinate_annotations_from_4_coordinates.py)
+[generate 8 coordinate annotations from 4 coordinate (pascal-VOC) format](https://github.com/Aswinprabhakaran/product_detection_aswin_prabhakaran/blob/master/utils/make_8_coordinate_annotations_from_4_coordinates.py)
 
 Since the data augmentation script takes 8 coordinate annotation , it is necesaary to convert the annotations to 8 coordinate.
 
@@ -94,7 +94,7 @@ Augmented Training Image are in './aug_images/' path
 
 As the data size is reasonabel to train a model, trained a tiny yolo wth keras implementation.
 
-train.py -- provides the support for the training multiple SSOD models, used one such feature to train my model.
+[train.py](https://github.com/Aswinprabhakaran/product_detection_aswin_prabhakaran/blob/master/train.py) -- provides the support for the training multiple SSOD models, used one such feature to train my model.
 
 Did transfer learning by loading the pretrained tiny yolo weights from [YOLO website](http://pjreddie.com/darknet/yolo/) and [AlexeyAB/darknet](https://github.com/AlexeyAB/darknet).
 
@@ -131,7 +131,7 @@ So once the detection is done , next comes the evaluation.
 
 Since this is a task of object detection , i have computed the precision and recall between the no of objects predicted and no of objects in the groundtruth.
 
-confusion_matrix.py -- This scripts takes care of computing the confusion matrix.
+[confusion_matrix.py](https://github.com/Aswinprabhakaran/product_detection_aswin_prabhakaran/blob/master/confusion_matrix.py) -- This scripts takes care of computing the confusion matrix.
 
 Once the inference is done, the script calls the matrix and make the result.
 
@@ -146,9 +146,9 @@ So all we have to do is just run :
 
 This folder contains :
 
-1. The image with predicted bounding boxes plotted on them with confidence score of the box.
-2. Images2Products.json - representing the mapping of no of productes identidfied by the model for the given image @ a confidence greater than 0.3 and NMS of 0.4.
-3. metrics.json - Contains the precision , recall and others values computed between groundtruth and predicted with an IOU of 0.4 between GT_boxes and pred_boxes
+1. The [Predicted images](https://github.com/Aswinprabhakaran/product_detection_aswin_prabhakaran/tree/master/results/images) with bounding boxes plotted on them with confidence score of the box.
+2. [Images2Products.json](https://github.com/Aswinprabhakaran/product_detection_aswin_prabhakaran/blob/master/results/Images2Product.json) - representing the mapping of no of productes identidfied by the model for the given image @ a confidence greater than 0.3 and NMS of 0.4.
+3. [metrics.json](https://github.com/Aswinprabhakaran/product_detection_aswin_prabhakaran/blob/master/results/metrics.json) - Contains the precision , recall and others values computed between groundtruth and predicted with an IOU of 0.4 between GT_boxes and pred_boxes
 4. Predicted_csv - Image wise predicted bounding boxes
 
 
