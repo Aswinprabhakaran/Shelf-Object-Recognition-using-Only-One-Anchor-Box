@@ -59,7 +59,7 @@ tf.keras implementation of a Single Shot Object Detector Architecture with diffe
 
 This folder contains scripts as follows :
 
-1. [generating augmented data ](https://github.com/Aswinprabhakaran/product_detection_aswin_prabhakaran/blob/master/utils/run_augmentation.py),
+1. [generating augmented data ](https://github.com/Aswinprabhakaran/product_detection_aswin_prabhakaran/blob/master/utils/augmentation_script.py),
 
 2. [converting annotation form COCO format to PASCAL-VOC format(yolo acceptable format)](https://github.com/Aswinprabhakaran/product_detection_aswin_prabhakaran/blob/master/utils/create_pascal_VOC_format_annotations.py) 
 
