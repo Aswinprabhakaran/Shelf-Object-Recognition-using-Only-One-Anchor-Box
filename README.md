@@ -110,6 +110,10 @@ this can be passed as a parameter while training the model and transfer training
 
 This way i trained my "Tiny YOLO" for 100 epochs to get a reasonal validation loss. 
 
+<p align="center">
+  <img src="results/images/C4_P08_N2_S2_1.JPG">
+</p>
+
 
 ### Inference 
 
