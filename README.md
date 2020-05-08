@@ -43,7 +43,7 @@ tf.keras implementation of a Single Shot Object Detector Architecture with diffe
 
 ```
 
-4. Run inference on provided test images
+2. Run inference on provided test images
 
 ```
 
@@ -57,10 +57,16 @@ tf.keras implementation of a Single Shot Object Detector Architecture with diffe
 
 ### utils :
 
-This folder contains scripts for generating augmented data , converting annotation form COCO format to PASCAL-VOC format(yolo acceptable format) and few other scripts like plotting the 
-annotation on the images to ensure the hygiene practises in computer vision which gives us visual correctness of annotations.
+This folder contains scripts as follows :
 
-This folder also contains script to generate 8 coordinate annotations from 4 coordinate (pascal-VOC) format annotation.
+1. [generating augmented data ](https://github.com/Aswinprabhakaran/product_detection_aswin_prabhakaran/blob/master/utils/run_augmentation.py),
+
+2. [converting annotation form COCO format to PASCAL-VOC format(yolo acceptable format)](https://github.com/Aswinprabhakaran/product_detection_aswin_prabhakaran/blob/master/utils/create_pascal_VOC_format_annotations.py) 
+
+3. [Plot Annotation on images for visual verification] (https://github.com/Aswinprabhakaran/product_detection_aswin_prabhakaran/blob/master/utils/plot_annotations_on_images.py)
+
+This folder also contains script to 
+[generate 8 coordinate annotations from 4 coordinate (pascal-VOC) format] (https://github.com/Aswinprabhakaran/product_detection_aswin_prabhakaran/blob/master/utils/make_8_coordinate_annotations_from_4_coordinates.py)
 
 Since the data augmentation script takes 8 coordinate annotation , it is necesaary to convert the annotations to 8 coordinate.
 
