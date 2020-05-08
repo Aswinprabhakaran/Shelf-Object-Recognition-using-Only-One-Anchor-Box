@@ -80,11 +80,10 @@ Different Single Shot Object detector :
 2. YOLO
 
 
-Given a data of 354 images comprised of different angles. Made the split as 283 images for training and 71 images for testing.
+Given a data of 354 images comprised of different angles. Made the split as 283 images for training and 71 images for testing.As the trainning data size is too small for a deep learning model to learn, performed 'Augmentation' to increase the data size.
 
-As the trainning data size is too small for a deep learning model to learn, performed 'Augmentation' to increase the data size.
-
-[Augmentation](https://github.com/Aswinprabhakaran/product_detection_aswin_prabhakaran/blob/master/utils/augmentation_script.py) - performs 5X augmentation on a single image and thus genearted 1415 images for training.
+[5X - Augmentation](https://github.com/Aswinprabhakaran/product_detection_aswin_prabhakaran/blob/master/utils/run_augmentation.py) - performs 5X augmentation on a single image by calling [Augmentation script](https://github.com/Aswinprabhakaran/product_detection_aswin_prabhakaran/blob/master/utils/augmentation_script.py) 
+and thus genearted 1415 images for training.
  
 Augmented Training Image are in './aug_images/' path
 
@@ -92,7 +91,7 @@ Augmented Training Image are in './aug_images/' path
 *** Tiny Yolo ***
 
 
-As the data size is reasonabel to train a model, trained a tiny yolo wth keras implementation.
+As the data size is reasonable to train a model, trained keras implementation of tiny yolo
 
 [train.py](https://github.com/Aswinprabhakaran/product_detection_aswin_prabhakaran/blob/master/train.py) -- provides the support for the training multiple SSOD models, used one such feature to train my model.
 
@@ -101,7 +100,7 @@ Did transfer learning by loading the pretrained tiny yolo weights from [YOLO web
 
 
 
-This super cool repo supports two phases of tranfer learning training in a easy way :
+This super cool [repo](https://github.com/david8862/keras-YOLOv3-model-set) supports two phases of tranfer learning training in a easy way :
 
 1. Phase 1 - unfreeze only last layer of loaded pretrained model or unfreeze backbone of the model or unfreeze all
 
