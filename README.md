@@ -78,7 +78,7 @@ Given a data of 354 images comprised of different angles. Made the split as 283 
 
 As the trainning data size is too small for a deep learning model to learn, performed 'Augmentation' to increase the data size.
 
-[Augmentation(https://github.com/Aswinprabhakaran/product_detection_aswin_prabhakaran/blob/master/utils/augmentation_script.py) - performs 5X augmentation on a single image and thus genearted 1415 images for training.
+[Augmentation](https://github.com/Aswinprabhakaran/product_detection_aswin_prabhakaran/blob/master/utils/augmentation_script.py) - performs 5X augmentation on a single image and thus genearted 1415 images for training.
  
 Augmented Training Image are in './aug_images/' path
 
